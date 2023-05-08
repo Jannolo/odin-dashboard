@@ -17,6 +17,74 @@ h2 {
     grid-template: 1fr 6fr/1fr 4fr;
 }
 
+.header {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    display: grid;
+    grid-template: 1fr 1fr/6fr 1fr 1fr 1fr
+}
+
+.profile-header {
+    grid-column: 3/5;
+}
+
+.header-buttons {
+    grid-column: 2/5;
+}
+
+.search img, .notification-bell {
+    max-height: 1.5em;
+}
+
+.search {
+    display: flex;
+
+}
+
+.notification-bell {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-header img {
+    max-height: 3em;
+}
+
+.greeting {
+    display: grid;
+    grid-template: 1fr 1fr/ 3.5em 1fr;
+}
+
+.greeting img {
+    max-height: 3em;
+}
+
+.greeting > .name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    grid-row: 1/-1;
+}
+
+form {
+    flex-grow: 1;
+    display: flex;
+}
+
+input {
+    flex-grow: 1;
+    height: 1.5em;
+}
+
 .sidebar {
     grid-row: 1 /5;
 
@@ -48,6 +116,15 @@ nav > a {
     padding-bottom: 0.5em;
     color: white;
     text-decoration: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a > img {
+    max-height: 1.5em;
+    stroke: white;
 }
 
 .header {
@@ -63,7 +140,7 @@ nav > a {
     grid-area: 2/2/-1/-1;
 
     display: grid;
-    grid-template: 1fr 1fr/3fr 1fr;
+    grid-template: 1fr/3fr 1fr;
     gap: 15px;
 }
 
@@ -71,15 +148,15 @@ nav > a {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    gap: 10px;
+    gap: 1em;
 }
 
 .card {
     background-color: #ffffff;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 2em;
     border-radius: 10px;
 
-    box-shadow: 2px 2px 2px 2px grey;
+    box-shadow: 2px 2px grey;
 }
 
 .section-wrapper {
