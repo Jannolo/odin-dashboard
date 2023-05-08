@@ -75,6 +75,28 @@ h2 {
     grid-row: 1/-1;
 }
 
+.header button {
+   padding-left: 2em;
+   padding-right: 2em;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 5px;
+}
+
 form {
     flex-grow: 1;
     display: flex;
@@ -83,6 +105,9 @@ form {
 input {
     flex-grow: 1;
     height: 1.5em;
+    background-color: lightgray;
+    border: none;
+    border-radius: 10px;
 }
 
 .sidebar {
